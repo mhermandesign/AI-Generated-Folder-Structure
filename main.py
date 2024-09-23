@@ -5,13 +5,11 @@ import json
 import os
 import pprint
 
-# This script is designed to generate a folder structure on a local machine by using a generative model as the logic
-# engine, rather than hard-coding it. Its intent is simply to help you overcome the blank-page part of starting a
-# project. It does this by sending a request to a generative model, considering a project type and topic, and
-# responding with an outline of a (hopefully) useful folder structure. On user confirmation, Python's 'json' module is
-# called in to help parse the output, pprint formats the text for user legibility, and os is used for actually creating
-# the folder structure. This script specifically calls to the 'openai' module, using 'dotenv' to access the .env file -
-# which should be created by the user in the root of the project directory.
+'''
+This script is designed to generate a folder structure on a local machine by using a generative model as the logic engine, rather than hard-coding it. Its intent is simply to help you overcome the blank-page part of starting a project.
+
+It does this by sending a request to a generative model, considering a project type and topic, and responding with an outline of a (hopefully) useful folder structure. On user confirmation, Python's 'json' module is called in to help parse the output, pprint formats the text for user legibility, and os is used for actually creating the folder structure. This script specifically calls to the 'openai' module, but could be refactored to work with other models and APIs. It also uses 'dotenv' to access the .env file, which should be created by the user in the root of the project directory.
+'''
 
 
 # ==================================
