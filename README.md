@@ -7,5 +7,5 @@ Simply run main.py, enter a project type and topic, and let the script to the re
 
 Ensure you have a .env file at the root of the project folder containing a key-pair for API_KEY:
 
-`API_KEY="your key here"`
+`API_KEY=YOUR_KEY_HERE`
 
