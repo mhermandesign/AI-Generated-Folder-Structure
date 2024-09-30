@@ -45,7 +45,7 @@ _base_path = "./example_folder_structures" # By default, this is set to the curr
 
 # Folder Structure Generation | Uses 'os' to make the directory structure on your machine.
 def create_folders(directory_structure, base_path="."):
-    # Recursively dig into the
+    # Recursively dig into the folder structure being created, making new folders as needed.
     for folder_name, sub_structure in directory_structure.items():
 
         folder_path: str = os.path.join(base_path, folder_name)
